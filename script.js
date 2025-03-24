@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let timetable = JSON.parse(localStorage.getItem('timetable')) || {
-        1: [{ time: '9:00 - 10:00', subject: 'Math' }, { time: '11:00 - 12:00', subject: 'Science' }], // Monday
-        2: [{ time: '10:00 - 11:00', subject: 'History' }, { time: '1:00 - 2:00', subject: 'English' }], // Tuesday
-        3: [{ time: '9:30 - 10:30', subject: 'Physics' }, { time: '2:00 - 3:00', subject: 'Chemistry' }], // Wednesday
-        4: [{ time: '8:00 - 9:00', subject: 'Biology' }, { time: '12:00 - 1:00', subject: 'Geography' }], // Thursday
-        5: [{ time: '10:30 - 11:30', subject: 'Computer Science' }, { time: '3:00 - 4:00', subject: 'Art' }], // Friday
+        1: [], // Monday
+        2: [], // Tuesday
+        3: [], // Wednesday
+        4: [], // Thursday
+        5: [], // Friday
         6: [], // Saturday
         0: []  // Sunday
     };
