@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Today's Timetable</h1>
+        <div id="timetable" class="timetable-container"></div>
+        <button id="editButton">Edit Timetable</button>
+        <button id="viewButton">View Complete Timetable</button>
+        <div id="editForm" style="display: none;">
+            <h2>Edit Timetable</h2>
+            <form id="timetableForm">
+                <label for="day">Select Day:</label>
+                <select id="day">
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                    <option value="0">Sunday</option>
+                </select>
+                <div id="entries">
+                    <!-- Entries will be dynamically added here -->
+                </div>
+                <button type="button" id="addEntry">Add Entry</button>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        <!-- Complete Timetable Grid -->
+        <div id="completeTimetableGrid" style="display: none;">
+            <h2>Complete Timetable</h2>
+            <table id="timetableGrid">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>08:00 - 8:40</th>
+                        <th>08:40 - 09:20</th>
+                        <th>09:20 - 10:00</th>
+                        <th>10:00 - 10:40</th>
+                        <th>10:40 - 11:00</th>
+                        <th>11:00 - 11:40</th>
+                        <th>11:40 - 12:20</th>
+                        <th>12:20 - 01:00</th>
+                        <th>01:00 - 01:40</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Timetable grid will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
